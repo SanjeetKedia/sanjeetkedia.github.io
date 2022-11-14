@@ -14,4 +14,4 @@ I will add the projects as i finish them. So far this is my project list
 
 ## Contact Me
 
-If anyone wants to collab with a project or anything. Here is my linktree.
+If anyone wants to collab with a project or anything. You can send me an email at thuyatun31@gmail.com
