@@ -1,0 +1,54 @@
+:root {
+  --font-opensans: "Open Sans", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-logo: "Satisfy", cursive;
+  --color-black: #12130f;
+  --color-white: #ffffff;
+  --color-blue: #00a7e1;
+  --color-darkblue: #007ea7;
+  --color-grey: #a1867f;
+}
+
+body {
+  font-family: var(--font-poppins);
+}
+
+/* Nav Bar */
+nav {
+  display: flex;
+  padding: 2rem 10rem 1rem 10rem;
+}
+
+nav #logo {
+  font-size: 3rem;
+  font-family: var(--font-logo);
+  color: var(--color-blue);
+}
+
+nav #nav-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  gap: 2rem;
+}
+
+nav .active {
+  color: var(--color-blue);
+  font-weight: 500;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+nav .nav-btn {
+  font-size: 1.5rem;
+}
+
+header #line-break {
+  margin: 0 8rem;
+  border: none;
+  border-top: 2px solid var(--color-grey);
+}
