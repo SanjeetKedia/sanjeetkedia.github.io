@@ -5,12 +5,13 @@
   --color-black: #12130f;
   --color-white: #ffffff;
   --color-blue: #00a7e1;
-  --color-darkblue: #007ea7;
+  --color-darkblue: #016688;
   --color-grey: #a1867f;
 }
 
 body {
   font-family: var(--font-poppins);
+  box-sizing: border-box;
 }
 
 /* Nav Bar */
@@ -50,5 +51,72 @@ nav .nav-btn {
 header #line-break {
   margin: 0 8rem;
   border: none;
-  border-top: 2px solid var(--color-grey);
+  border-top: 0.2rem solid var(--color-grey);
+  border-radius: 1rem;
+}
+
+/* Home Section */
+
+#home .container {
+  margin: 2.5rem 10rem;
+  display: flex;
+  gap: 10%;
+  justify-content: space-between;
+}
+
+#home .container .text-box {
+  background-color: var(--color-darkblue);
+  color: rgb(223, 223, 223);
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+#home .container .text-box h2 {
+  text-align: center;
+  font-size: 4rem;
+  border-bottom: 2px solid var(--color-black);
+  margin-bottom: 1rem;
+  color: var(--color-white);
+}
+
+#home .container .text-box span.logo {
+  font-family: var(--font-logo);
+  color: var(--color-black);
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+
+#home .container .text-box a {
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+#home .container .text-box a:hover {
+  text-decoration: underline;
+}
+
+#home .container .text-box .follow-me-btn {
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid var(--color-white);
+  margin-top: 3rem;
+  font-size: 2rem;
+  font-family: var(--font-opensans);
+  border-radius: 1rem;
+  color: var(--color-white);
+}
+
+#home .container .text-box .follow-me-btn:hover {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  transition: all ease-in 300ms;
+}
+
+#home .container .image-box {
+  margin-left: auto;
+}
+
+#home .container .image-box img {
+  width: 100%;
+  min-width: 30vw;
 }
