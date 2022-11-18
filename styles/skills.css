@@ -36,20 +36,24 @@
   align-items: center;
 }
 
+#skills .skill-container.html {
+  --primary: rgb(222, 91, 16);
+  --secondary: rgb(230, 153, 10);
+}
+#skills .skill-container.css {
+  --primary: darkblue;
+  --secondary: lightblue;
+}
+#skills .skill-container.js {
+  --primary: rgb(255, 221, 3);
+  --secondary: rgb(255, 236, 112);
+}
+
 #skills .skill-container h3 {
   font-size: 2rem;
   margin-bottom: 1rem;
   font-weight: 700;
-}
-
-#skills .skill-container h3.html {
-  color: orange;
-}
-#skills .skill-container h3.css {
-  color: darkblue;
-}
-#skills .skill-container h3.js {
-  color: yellow;
+  color: var(--primary);
 }
 
 #skills .skill {
@@ -65,21 +69,6 @@
 
 #skills .skill.animate {
   animation: progress 2s 0.5s forwards;
-}
-
-#skills #html-skill {
-  --primary: rgb(154, 88, 9);
-  --secondary: rgb(230, 153, 10);
-}
-
-#skills #css-skill {
-  --primary: darkblue;
-  --secondary: lightblue;
-}
-
-#skills #js-skill {
-  --primary: rgb(198, 198, 3);
-  --secondary: rgb(251, 251, 120);
 }
 
 #skills .mySkills .skill::before {
