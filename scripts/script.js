@@ -42,3 +42,12 @@ leftSlide.addEventListener("click", () => {
 rightSide.addEventListener("click", () => {
   moveSlide(1);
 });
+
+// Animate when skills is in view
+document.addEventListener("scroll", (e) => {
+  const elementTarget = document.querySelectorAll(".skill");
+  const container = document.querySelector("#projects");
+  if (window.scrollY > container.offsetTop + container.offsetHeight / 2) {
+    elementTarget.forEach((ele) => ele.classList.add("animate"));
+  }
+});
