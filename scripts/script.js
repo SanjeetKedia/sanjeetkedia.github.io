@@ -36,11 +36,11 @@ function moveSlide(num) {
 }
 
 leftSlide.addEventListener("click", () => {
-  moveSlide(-1);
+  moveSlide(1);
 });
 
 rightSide.addEventListener("click", () => {
-  moveSlide(1);
+  moveSlide(-1);
 });
 
 // Animate when skills is in view

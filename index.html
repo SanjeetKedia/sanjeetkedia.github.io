@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="styles/homeSection.css" />
     <link rel="stylesheet" href="styles/projectSection.css" />
     <link rel="stylesheet" href="styles/skills.css" />
+    <link rel="stylesheet" href="styles/findme.css" />
 
     <!-- Adding Scripts -->
     <script src="scripts/script.js" defer></script>
@@ -114,7 +115,25 @@
       </section>
     </main>
     <footer>
-      <section id="find-me"></section>
+      <section id="find-me">
+        <h2>Find Me!</h2>
+        <form action="" id="contact-form" method="get">
+          <label for="first-name">First Name</label>
+          <input type="text" name="first-name" id="first-name" />
+          <label for="last-name">Last Name</label>
+          <input type="text" name="last-name" id="last-name" />
+          <label for="form-email">Email</label>
+          <input type="email" name="form-email" id="form-email" />
+          <label for="form-message">Message</label>
+          <textarea
+            name="form-message"
+            id="form-message"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
       <section id="com-links"></section>
     </footer>
   </body>

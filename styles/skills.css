@@ -15,7 +15,7 @@
 
 #skills {
   padding: 3rem 6rem;
-  background-color: var(--color-grey);
+  background-color: rgb(153, 199, 205);
 }
 
 #skills h2 {
@@ -41,19 +41,20 @@
   --secondary: rgb(230, 153, 10);
 }
 #skills .skill-container.css {
-  --primary: darkblue;
+  --primary: rgb(10, 10, 207);
   --secondary: lightblue;
 }
 #skills .skill-container.js {
-  --primary: rgb(255, 221, 3);
-  --secondary: rgb(255, 236, 112);
+  --primary: rgb(220, 192, 5);
+  --secondary: rgb(254, 238, 134);
 }
 
 #skills .skill-container h3 {
-  font-size: 2rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
   font-weight: 700;
   color: var(--primary);
+  text-shadow: 2px 2px black;
 }
 
 #skills .skill {
@@ -65,6 +66,7 @@
   overflow: hidden;
   display: grid;
   place-items: center;
+  box-shadow: 7px 5px 15px black;
 }
 
 #skills .skill.animate {
@@ -96,4 +98,5 @@
   font-size: calc(var(--diameter) / 5);
   color: var(--primary);
   font-weight: 500;
+  text-shadow: 2px 2px black;
 }
