@@ -1,0 +1,100 @@
+footer {
+  background-color: #17252a;
+}
+
+#find-me {
+  padding: 3rem 5rem;
+  padding-bottom: 1rem;
+}
+
+#find-me h2 {
+  font-size: 4rem;
+  font-style: italic;
+  font-family: var(--font-logo);
+  font-weight: 500;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+#contact-form {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr) auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "fn me"
+    "fnI meI"
+    "ln meI"
+    "lnI meI"
+    "em meI"
+    "emI meI"
+    ". submit";
+  gap: 1rem 2rem;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+#contact-form label {
+  color: white;
+  font-size: 1.75rem;
+  align-self: end;
+}
+
+#contact-form input {
+  width: 65%;
+  font-size: 1.5rem;
+  padding: 0.2rem;
+}
+
+#contact-form textarea {
+  resize: none;
+}
+
+#contact-form input,
+#contact-form textarea {
+  border: 2px solid var(--color-grey);
+  border-radius: 0.5rem;
+}
+
+#contact-form label[for="first-name"] {
+  grid-area: fn;
+}
+#contact-form label[for="last-name"] {
+  grid-area: ln;
+}
+#contact-form label[for="form-email"] {
+  grid-area: em;
+}
+#contact-form label[for="form-message"] {
+  grid-area: me;
+}
+
+#contact-form #first-name {
+  grid-area: fnI;
+}
+#contact-form #last-name {
+  grid-area: lnI;
+}
+#contact-form #form-email {
+  grid-area: emI;
+}
+#contact-form #form-message {
+  grid-area: meI;
+}
+
+#contact-form button[type="submit"] {
+  grid-area: submit;
+  width: fit-content;
+  place-self: center;
+  padding: 1rem 2rem;
+  font-size: 1.35rem;
+  background-color: var(--color-yellow-orange);
+  color: black;
+  border: none;
+  box-shadow: 2px 2px 2px black;
+  cursor: pointer;
+  border-radius: 1rem;
+  font-weight: 600;
+  font-family: var(--font-opensans);
+  margin-top: 1rem;
+}

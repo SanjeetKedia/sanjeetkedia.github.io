@@ -1,0 +1,119 @@
+/* Featured Projects */
+#projects .featured-projects {
+  background-color: var(--color-black);
+  padding: 2rem 0;
+}
+
+#projects .featured-projects h2 {
+  font-size: 3rem;
+  color: var(--color-yellow-orange);
+  margin-bottom: 2rem;
+  margin-inline: 6rem;
+}
+
+#projects .featured-projects-container .featured-project-cards {
+  display: flex;
+  overflow: hidden;
+  gap: 10rem;
+  justify-content: center;
+  padding: 1rem;
+  position: relative;
+  transition: all ease-in-out 5s;
+}
+
+#projects .featured-project-cards span {
+  --width: 3rem;
+  --height: 8rem;
+  width: var(--width);
+  height: var(--height);
+  padding: 2px;
+  position: absolute;
+  bottom: calc(50% - calc(var(--height) / 2));
+  z-index: 10;
+  cursor: pointer;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(123, 123, 123, 0.7);
+  opacity: 0.35;
+  border-radius: 0.5rem;
+  transition: all ease-in 200ms;
+}
+#projects .featured-project-cards span:hover {
+  opacity: 1;
+}
+
+#projects .featured-project-cards span.left-arrow {
+  right: calc(100% - var(--width));
+}
+
+#projects .featured-project-cards span.right-arrow {
+  left: calc(100% - var(--width));
+}
+
+#projects .featured-projects-container .featured-project-card,
+#projects .empty-project-card {
+  width: 500px;
+  height: 500px;
+  border: 1px solid honeydew;
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  opacity: 0.5;
+  filter: blur(3px);
+  transition: all ease-in-out 300ms;
+  pointer-events: none;
+}
+
+#projects .featured-project-card.active {
+  opacity: 1;
+  filter: none;
+  pointer-events: auto;
+}
+
+#projects .featured-project-card.active:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 2px 2px 0 2px var(--color-yellow-orange);
+}
+
+#projects .featured-project-card[data-project="clock"] {
+  background-image: url(../images/clock.png);
+}
+
+#projects .featured-project-card[data-project="snake"] {
+  background-image: url(../images/snakeGame.png);
+}
+
+#projects .featured-project-card[data-project="stop-watch"] {
+  background-image: url(../images/stopWatch.png);
+}
+
+#projects .featured-projects-slider {
+  display: flex;
+  justify-content: center;
+  gap: 1.3rem;
+  margin-top: 2rem;
+}
+
+#projects .featured-projects-slider .slider {
+  transition: all ease 700ms;
+  --radius: 1rem;
+  width: var(--radius);
+  height: var(--radius);
+  border-radius: 50%;
+  background-color: var(--color-grey);
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+#projects .featured-projects-slider .slider.active {
+  opacity: 0.8;
+  background-color: var(--color-yellow-orange);
+}
+
+#projects .featured-projects .slider:hover {
+  width: 2.5rem;
+  border-radius: 1rem;
+}

@@ -1,0 +1,67 @@
+/* Home Section */
+#home .container {
+  margin: 2.5rem 10rem;
+  display: flex;
+  gap: 10%;
+  justify-content: space-between;
+}
+
+#home .container .text-box {
+  background-color: var(--color-darkblue);
+  color: rgb(223, 223, 223);
+  padding: 1rem;
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+#home .container .text-box h2 {
+  text-align: center;
+  font-size: 4rem;
+  border-bottom: 2px solid var(--color-black);
+  margin-bottom: 1rem;
+  border-radius: 2px;
+  color: var(--color-white);
+}
+
+#home .container .text-box span.logo {
+  font-family: var(--font-logo);
+  color: var(--color-yellow-orange);
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+
+#home .container .text-box a {
+  color: var(--color-yellow-orange);
+  text-decoration: none;
+}
+
+#home .container .text-box a:hover {
+  text-decoration: underline;
+}
+
+#home .container .text-box .follow-me-btn {
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid var(--color-white);
+  margin-top: 3rem;
+  font-size: 2rem;
+  font-family: var(--font-opensans);
+  border-radius: 1rem;
+  color: var(--color-white);
+  transition: all ease-in 300ms;
+}
+
+#home .container .text-box .follow-me-btn:hover {
+  background-color: var(--color-white);
+  color: var(--color-darkblue);
+}
+
+#home .container .image-box {
+  margin-left: auto;
+}
+
+#home .container .image-box img {
+  width: 100%;
+  min-width: 30vw;
+  height: 100%;
+}

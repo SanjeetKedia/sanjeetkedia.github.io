@@ -1,0 +1,25 @@
+:root {
+  --font-opensans: "Open Sans", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-logo: "Satisfy", cursive;
+  --color-yellow-orange: #ffb140;
+  --color-black: #12130f;
+  --color-white: #ffffff;
+  --color-blue: #00a7e1;
+  --color-darkblue: #016688;
+  --color-grey: #a1867f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-poppins);
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: var(--font-logo);
+  font-size: 3rem;
+}

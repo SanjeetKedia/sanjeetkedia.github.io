@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Importing Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Linking StyleSheets -->
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/default.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/homeSection.css" />
+    <link rel="stylesheet" href="styles/projectSection.css" />
+    <link rel="stylesheet" href="styles/skills.css" />
+    <link rel="stylesheet" href="styles/findme.css" />
+
+    <!-- Adding Scripts -->
+    <script src="scripts/script.js" defer></script>
+    <title>Sanjeet Kedia | Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 id="logo">Sanjeet Kedia</h1>
+        <ul id="nav-btns">
+          <li><a href="#home" class="nav-btn active">Home</a></li>
+          <li><a href="#projects" class="nav-btn">Projects</a></li>
+          <li><a href="#skills" class="nav-btn">Skills</a></li>
+          <li><a href="#find-me" class="nav-btn">Find Me</a></li>
+        </ul>
+      </nav>
+      <hr id="line-break" />
+    </header>
+    <main>
+      <section id="home">
+        <div class="container">
+          <div class="text-box">
+            <h2>Hello Everyone</h2>
+            <p>
+              My name is <span class="logo">Sanjeet Kedia</span>, i am on my
+              road to become a full-stack developer. I will keep building my
+              portfolio over time while learning. So far i have not done any
+              websites yet. This is my first attempt of making a portfolio
+              website. Here is a link to my
+              <a
+                href="https://github.com/SanjeetKedia?tab=repositories"
+                target="_blank"
+                >github</a
+              >.
+            </p>
+            <button class="follow-me-btn">Follow Me</button>
+          </div>
+          <div class="image-box">
+            <img src="images/portfolio-pic.jpg" alt="Sanjeet Kedia on a boat" />
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="featured-projects">
+          <h2>Featured Projects</h2>
+          <div class="featured-projects-container">
+            <div class="featured-project-cards">
+              <span class="left-arrow">&larr;</span>
+              <span class="right-arrow">&rarr;</span>
+              <a
+                href="./html/clock/index.html"
+                data-project="clock"
+                class="featured-project-card"
+              >
+              </a>
+              <a
+                href="./html/snake/index.html"
+                data-project="snake"
+                class="featured-project-card active"
+              ></a>
+              <a
+                href="./html/stop-watch/index.html"
+                data-project="stop-watch"
+                class="featured-project-card"
+              >
+              </a>
+            </div>
+          </div>
+          <!-- Not added yet -->
+          <!-- 
+          <div class="featured-projects-slider">
+            <div data-project="clock" class="slider"></div>
+            <div data-project="snake" class="slider active"></div>
+            <div data-project="stop-watch" class="slider"></div>
+          </div> -->
+        </div>
+      </section>
+      <section id="skills">
+        <h2>My Skills</h2>
+        <div class="mySkills">
+          <div class="skill-container html">
+            <h3>HTML</h3>
+            <div id="html-skill" style="--value: 60" class="skill"></div>
+          </div>
+          <div class="skill-container css">
+            <h3>CSS</h3>
+            <div id="css-skill" class="skill" style="--value: 39"></div>
+          </div>
+          <div class="skill-container js">
+            <h3>Javascript</h3>
+            <div id="js-skill" class="skill" style="--value: 52"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section id="find-me">
+        <h2>Find Me!</h2>
+        <form action="" id="contact-form" method="get">
+          <label for="first-name">First Name</label>
+          <input type="text" name="first-name" id="first-name" />
+          <label for="last-name">Last Name</label>
+          <input type="text" name="last-name" id="last-name" />
+          <label for="form-email">Email</label>
+          <input type="email" name="form-email" id="form-email" />
+          <label for="form-message">Message</label>
+          <textarea
+            name="form-message"
+            id="form-message"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <section id="com-links"></section>
+    </footer>
+  </body>
+</html>
